@@ -11,7 +11,7 @@
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 10%;
-  grid-template-areas: "Logo About Services Contact" "main main main main";
+  grid-template-areas: "Logo About Services Pricing Contact" "main main main main main";
   row-gap: 2em;
   /* justify-items: start; */
 }
@@ -57,6 +57,10 @@
 
 #contact {
   grid-area: Contact;
+}
+
+#pricing {
+  grid-area: Pricing;
 }
 
 .main {
@@ -134,6 +138,15 @@ div#services {
   background-color: rgb(255, 174, 174);
   border-radius: 2ch;
   box-shadow: -5pt 5pt black;
+}
+
+div#pricing {
+  margin: 20pt;
+  padding: 10pt;
+  border: 2pt solid black;
+  border-radius: 2ch;
+  background-color: lightblue;
+  box-shadow: 5pt 5pt black;
 }
 
 p {
